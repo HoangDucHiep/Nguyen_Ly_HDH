@@ -1,0 +1,258 @@
+<html><head><style>body {
+   color: black;
+}
+</style></head><body><h1 id="ch-ng-1-t-ng-quan-v-hdh">Chương 1: Tổng quan về HDH</h1>
+<h2 id="kh-i-ni-m-h-i-u-h-nh">Khái niệm hệ điều hành</h2>
+<ul>
+<li><strong><em>Hệ điều hành là một hệ thống các chương trình hoạt động giữa người sử dụng và phần cứng máy tính. </em></strong>   </li>
+<li>Mục tiêu của HDH là cung cấp một môi trường thuận lợi để người sử dụng có thể thi hành các chương trình.   </li>
+<li>2 chức năng chính:   <ul>
+<li>Giả lập một máy tính mở rộng   </li>
+<li>Quản lí tài nguyên hệ thống (Phần cứng, phần mềm)   </li>
+</ul>
+</li>
+<li>Hệ điều hành là một phần quan trọng của hầu hết các hệ thống máy tính. Một hệ thống máy tính thường được chia thành bốn phần chính: Phần cứng, hệ điều hành, các chương trình ứng dụng, và người dùng<br>  <img src="files\image.png" alt="image.png">    </li>
+</ul>
+<h2 id="l-ch-s-ph-t-tri-n">Lịch sử phát triển</h2>
+<ul>
+<li>4  thế hệ   <ul>
+<li>Thế hệ 1 (1945 - 1955): Lập trình bằng ngôn ngữ máy tuyệt đối, bằng các bảng điều khiển, phiếu đục lỗ   </li>
+<li>Thế hệ 2 (1955 - 1965):    <ul>
+<li>Viết trước chương trình trê giấy sau đó dùng phiếu đục lỗ   </li>
+<li>Hệ thống xử lí theo lô ra đời   </li>
+</ul>
+</li>
+<li>Thế hệ 3 (1965 - 1980):    <ul>
+<li><strong><em>Hệ điều hành viết bằng hợp ngữ</em></strong>   </li>
+<li>Khái niệm đa chương, hệ điều hành chia sẻ thời gian ra đời   </li>
+</ul>
+</li>
+<li>Thế hệ 4 (1980 - nay): ra đời <strong><em>hệ điều hành mạng </em></strong>và <strong><em>hệ điều hành phân tán</em></strong>   </li>
+</ul>
+</li>
+</ul>
+<h2 id="ph-n-lo-i-h-i-u-h-nh">Phân loại hệ điều hành</h2>
+<h3 id="h-i-u-h-nh-x-l-theo-l-n-gi-n">Hệ điều hành xử lý theo lô đơn giản</h3>
+<ul>
+<li>Hệ điều hành xử lí công việc lần lượt theo những chỉ thị đã xác định trước, khi công việc này kết thúc thì chuyển sang công việc tiếp theo   </li>
+<li>Ưu điểm:   <ul>
+<li>Có tốc độ thực hiện cao   </li>
+</ul>
+</li>
+<li>Hạn chế:   <ul>
+<li>Phải lưu toàn bộ chương trình và dữ liệu của công việc vào hàng đợi   </li>
+<li>Không thể thay đổi chương trình và dữ liệu của các công việc   </li>
+<li>Khi một công việc chuyển sang truy xuất các thiết bị vào ra, thì processor chuyển sang trạng thái chừo, gây lãng phí thời gian   </li>
+</ul>
+</li>
+</ul>
+<h3 id="h-i-u-h-nh-x-l-theo-l-a-ch-ng">Hệ điều hành xử lý theo lô đa chương</h3>
+<ul>
+<li>HDH có khả năng thực hiện nhiều công việc, nhiều chương trình đồng thời.   </li>
+<li>HDH nạp một phần code và data của các công việc vào bộ nhớ, tất cả đều ở trạng thái sẵn sàng thực hiện. Trong quá trình thực hiện công việc, khi một công việc cần truy suất các thiết bị vào ra, thì processor sẽ chuyển sang công việc khác, cứ vậy đến hết.   </li>
+<li>Ưu điểm:   <ul>
+<li>TIết kiệm bộ nhớ   </li>
+<li>Hạn chế thời gian nhàn rỗi   </li>
+</ul>
+</li>
+<li>Hạn chế   <ul>
+<li>Chịu chi phí cao cho việc lập lịch   </li>
+<li>Giải quyết việc chia sẻ bộ nhớ chính cho cho các công việc khác nhau   </li>
+</ul>
+</li>
+<li>VD: MS_DOS   </li>
+</ul>
+<h3 id="h-i-u-h-nh-chia-s-th-i-gian">Hệ điều hành chia sẻ thời gian</h3>
+<ul>
+<li>Tương tự như xử lí theo lô đa chương, những việc chuyển processor từ công việc, tiến trình này sang công việc, tiến trình khác không phụ thuộc vào công việc, tiến trình mà chỉ phụ thuộc vào sự điều phối của HDH   </li>
+<li>Thời gian chuyển đổi rất nhỏ nên ta có cảm giác các công việc được thực hiện song song. Người dùng có thể yêu cầu HDH thực hiện nhiều chương trình, công việc đồng thời với nhau   </li>
+<li>Hệ điều hành chia sẻ thời gian là mở rộng logic của hệ điều hành đa chương và nó thường được gọi là hệ điều hành đa nhiệm (Multitasking)   </li>
+<li>VD: Windows 9x/   </li>
+</ul>
+<h3 id="h-i-u-h-nh-a-vi-x-l-">Hệ điều hành đa vi xử lí</h3>
+<ul>
+<li>Là các hệ điều hành dùng điều khiển hoạt động của các hệ thống máy tính có nhiều bộ vi xử lí.   </li>
+<li>Gồm 2 loại:   <ul>
+<li>Đối xứng (SMP): vi xử lí nào cũng có thể chạy một loại tiểu tiến trình bất kì, các vi xử lí giao tiếp với nhau thông qua một bộ nhớ dùng chung. (Windows NT, 2000)   </li>
+<li>Bất đối xứng (ASMP): dành ra 2 vi xử lí để sử dụng riêng, các vi xử lí còn lại dùng để điều khiển các chương trình của người sử dụng.   </li>
+</ul>
+</li>
+</ul>
+<h3 id="h-i-u-h-nh-m-ng">Hệ điều hành mạng</h3>
+<ul>
+<li>Là các hệ điều hành dùng để điều khiển sự hoạt động của mạng máy tính. Ngoài các chức năng cơ bản của một hệ điều hành, các hệ điều hành mạng còn phải thực hiện việc chia sẻ và bảo vệ tài nguyên của mạng.   </li>
+<li>VD: Windows9x/NT, Windows 2000, Linux. 1.3.6    </li>
+</ul>
+<h3 id="h-i-u-h-nh-x-l-th-i-gian-th-c">Hệ điều hành xử lý thời gian thực</h3>
+<ul>
+<li>Hệ điều hành này có khả năng cho kết quả tức thời, chính xác sau mỗi công việc.   </li>
+<li>Một hệ điều hành xử lý thời gian thực phải được định nghĩa tốt, thời gian xử lý nhanh. Hệ thống phải cho kết quả chính xác trong khoảng thời gian bị thúc ép nhanh
+nhất.    </li>
+<li>Có hai hệ thống xử lý thời gian thực là hệ thống thời gian thực cứng và hệ thống thời gian thực mềm.   <ul>
+<li>Hệ thống thời gian thực cứng là công việc đƣợc hoàn tất đúng lúc đó dữ liệu thường được lưu trong bộ nhớ ngắn hạn hay trong ROM. Việc xử lý theo thời gian thực sẽ xung đột với tất cả hệ thống liệt kê ở trên.   </li>
+<li>Dạng thứ hai là hệ thống thời gian thực mềm, mỗi công việc có một độ ưu tiên riêng và sẽ được thi hành theo độ ưu tiên đó.   </li>
+</ul>
+</li>
+</ul>
+<h2 id="c-c-th-nh-ph-n-c-hdh">Các thành phần cả HDH</h2>
+<h3 id="th-nh-ph-n-qu-n-l-ti-n-tr-nh">Thành phần quản lí tiến trình</h3>
+<ul>
+<li>Một tiến trình là một chương trình đang được thi hành. Một tiến trình phải sử dụng tài nguyên như thời gian sử dụng CPU, bộ nhớ, tập tin, các thiết bị nhập xuất để hoàn tất công việc của nó. Các tài nguyên này được cung cấp khi tiến trình được tạo hay trong quá trình thi hành.   </li>
+<li>Một tiến trình được coi là một đơn vị làm việc của hệ thống. Một hệ thống có thể có nhiều tiến trình cùng lúc, trong đó một số tiến trình là của hệ điều hành, một số
+tiến trình là của người sử dụng. các tiến trình này có thể diễn ra đồng thời.   </li>
+<li>Vai trò của HDH trong việc quản lí tiến trình   <ul>
+<li>Tạo và hủy các tiến trình   </li>
+<li>Tạm dừng và thực hiện tiếp một tiến trình   </li>
+<li>Cung cấp các cơ chế đồng bộ tiến trình   </li>
+<li>Cấp phát tài nguyên  cho tiến trình   </li>
+<li>Cung cấp các cơ chế giao tiếp giữa các tiến trình   </li>
+<li>Cung cấp cơ chế kiểm soát deadlock   </li>
+</ul>
+</li>
+</ul>
+<h3 id="th-nh-ph-n-qu-n-l-b-nh-">Thành phần quản lí bộ nhớ</h3>
+<ul>
+<li>Bộ nhớ là thiết bị lưu trữ duy nhất mà CPU có thể truy xuất trực tiếp. Bộ nhớ chính có thể xem như một mảng kiểu byte hay kiểu word. Mỗi phần tử đều có địa chỉ. Đó là nơi lưu dữ liệu được CPU truy xuất một cách nhanh chóng so với các thiết bị nhập/xuất.   </li>
+<li>Một chương trình muốn thi hành trước hết phải được ánh xạ thành địa chỉ tuyệt đối và nạp vào bộ nhớ chính. Khi chương trình thi hành, hệ thống truy xuất các chỉ thị và dữ liệu của chương trình trong bộ nhớ chính. Ngay cả khi tiến trình đã kết thúc, dữ liệu vẫn còn ở trong bộ nhớ cho đến khi một tiến trình khác được ghi chồng lên   </li>
+<li>Vai trò của HDH:   <ul>
+<li>Lưu trữ các thông tìn về vị trí trong bộ nhớ đã được sử dụng và tiến trình nào đang sử dụng   </li>
+<li>Quyết định tiến trình nào được nạp vào bộ nhớ chính, khi bộ nhớ đã có thể dùng được   </li>
+<li>Cấp phát và thu hồi bộ nhớ khi cần thiết   </li>
+<li>Bảo vệ bộ nhớ   </li>
+</ul>
+</li>
+</ul>
+<h3 id="th-nh-ph-n-qu-n-l-b-nh-ph-">Thành phần quản lí bộ nhớ phụ</h3>
+<ul>
+<li>Đa số máy tính đều dùng đĩa để lưu trữ cả chương trình và dữ liệu   </li>
+<li>Hầu như tất cả chương trình đều được lưu trữ trên đĩa cho tới khi nó được thực hiện, nạp vào trong bộ nhớ chính và cũng sử dụng đĩa để chứa dữ liệu và kết quả xử lí.   </li>
+<li>Vai trò của HDH   <ul>
+<li>Quản lí vùng trống trên đĩa   </li>
+<li>Định vị lưu trữ thông tin trên đĩa   </li>
+<li>Lập lịch cho vấn đề đọc/ghi thông tin trên đĩa   </li>
+</ul>
+</li>
+</ul>
+<h3 id="qu-n-l-i-o">Quản lí I/O</h3>
+<ul>
+<li>Một trong những mục tiêu của hệ điều hành là che dấu những đặc thù của các thiết bị phần cứng đối với người sử dụng, thay vào đó là một lớp thân thiện hơn, người sử dụng dễ thao tác hơn.   </li>
+<li>Hệ thống I/O gồm:   <ul>
+<li>Thành phần quản lí bộ nhớ chứa vùng đệm (buffering), lưu trữ (caching), spooling (vùng chứa)   </li>
+<li>Giao tiếp điều khiển thiết bị tổng quát   </li>
+<li>Bộ điều khiển cho các thiết bị xác định   </li>
+</ul>
+</li>
+</ul>
+<h3 id="th-nh-ph-n-qu-n-l-t-p-tin">Thành phần quản lý tập tin</h3>
+<ul>
+<li>Để cho việc sử dụng hệ thống máy tính thuận tiện, hệ điều hành cung cấp một cái nhìn logic đồng nhất về hệ thống lưu trữ thông tin, Hệ điều hành định nghĩa một
+đơn vị lưu trữ logic là tập tin.    </li>
+<li>Hệ điều hành tạo một ánh xạ từ tập tin đến vùng thông tin trên đĩa và truy xuất những tập tin này thông qua thiết bị lưu trữ.   </li>
+<li>Một tập tin là một tập hợp những thông tin do người tạo ra nó xác định. Thông thường một tập tin đại diện cho một chương trình và dữ liệu. Dữ liệu của tập tin có thể là số, là ký tự, hay ký số   </li>
+<li>Vai trò của HDH:   <ul>
+<li>Tạo và xóa một tập tin   </li>
+<li>Tạo và xóa một thư mục   </li>
+<li>Hỗ trợ các thao tác trên tập tin, thư mục.   </li>
+<li>Tạo mối quan hệ giữa tập tin và bộ nhớ phụ chứa tập tin   </li>
+<li>Sao lưu dự phòng các tập tin trên các thiết bị lưu trữ   </li>
+<li>Bảo vệ tập tin khi có hiện tượng truy xuất đồng thời   </li>
+<li>Tạo cơ chế truy xuất tập tin thông qua tên tập tên   </li>
+</ul>
+</li>
+</ul>
+<h3 id="h-th-ng-b-o-v-">Hệ thống bảo vệ</h3>
+<ul>
+<li>Hệ thống bảo vệ là một cơ chế kiểm soát truy suất của chương trình, tiến trình, hoặc người sử dụng với tài nguyên của hệ thống.   </li>
+<li>Giúp tăng độ an toàn khi kiểm tra lỗi trong giao tiếp giữa những hệ thống nhỏ bên trong   </li>
+</ul>
+<h3 id="th-nh-ph-n-th-ng-d-ch-l-nh">Thành phần thông dịch lệnh</h3>
+<ul>
+<li>Một trong những phần quan trọng của hệ điều hành là <strong><em>hệ thống thông dịch lệnh</em></strong>, đó là giao tiếp giữa người sử dụng và hệ điều hành. Thành phần này chính là Shell.   </li>
+<li><strong><em>Shell </em></strong>là một bộ phận hay một tiến trình đặc biệt của hệ điều hành, nó có nhiệm vụ nhận lệnh của người sử dụng, phân tích lệnh và phát sinh tiến trình mới để thực hiện yêu cầu của lệnh, tiến trình mới này đƣợc gọi là tiến trình đáp ứng yêu cầu.   </li>
+</ul>
+<h3 id="th-nh-ph-n-qu-n-l-m-ng">Thành phần quản lý mạng</h3>
+<ul>
+<li>Xem xét đến các vấn đề liên lạc giữa các tiến trình, chia sẻ tài nguyên chung, vấn đề bảo mật trên các tiến trình trong các hệ thống khác nhau.   </li>
+</ul>
+<h2 id="c-c-c-u-tr-c-c-a-h-th-ng">Các cấu trúc của hệ thống</h2>
+<h3 id="h-th-ng-n-kh-i">Hệ thống đơn khối</h3>
+<ul>
+<li>Trong hệ thống này hệ điều hành là một tập hợp các thủ tục, mỗi thủ tục có thể gọi thực hiện một thủ tục khác bất kỳ lúc nào khi cần thiết.   </li>
+<li>Cấu trúc tối thiểu phân chia các thủ tục trong hệ thống thành 3 cấp độ   <ul>
+<li>Một chương trình chính (chương trình của người sử dụng) gọi đến một thủ tục dịch vụ của HDH. <strong><em>Lời gọi này được gọi là lời gọi hệ thống (system call)</em></strong>   </li>
+<li>Một tập các thủ tục dịch vụ để đáp ứng những lời gọi hệ thống từ các chương trình của người sử dụng   </li>
+<li>Một tập các thủ tục tiện ích hỗ trợ các thủ tục trong việc thực hiện các lời gọi hệ thống   </li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Hạn chế:   <ul>
+<li>Không có sự che dấu dữ liệu, mỗi thủ tục có thể gọi đến tất cả các thủ tục khác. Chương trình ứng dụng có thể truy xuất các thủ tục cấp thấp tác động đến cả phần cứng do vậy HĐH khó kiểm soát và bảo vệ hệ thống.   </li>
+<li>Các thủ tục dịch vụ mang tính chất tĩnh, nó chỉ hoạt động khi được gọi bởi chương trình của người dùng,  làm cho hệ thống thiếu chủ động trong việc quản lí môi trường   </li>
+</ul>
+</li>
+</ul>
+<h3 id="c-c-h-th-ng-ph-n-l-p">Các hệ  thống phân lớp</h3>
+<ul>
+<li>Hệ thống được chia thành một số lớp, mỗi lớp được xây dựng dựa vào các lớp bên trong. Lớp trong cùng thường là phần cứng, lớp ngoài cùng là giao tiếp với người sử dụng   </li>
+<li>Mỗi lớp là một đối tượng trừu tượng chứa đựng bên trong nó các dữ liệu và các thao tác xử lý dữ liệu đó. Lớp n chứa đựng một cấu trúc dữ liệu và các thủ tục có thể được gọi bởi lớp n+1 hoặc ngược lại có thể gọi các thủ tục ở lớp n-1.   </li>
+<li>Nhận xét: Hệ thống này mang tính đơn thể, nên dễ cài đặt, tìm lỗi và kiểm chứng hệ thống.<br><img src="files\image_f.png" alt="image.png">    </li>
+</ul>
+<h3 id="m-y-o">Máy ảo</h3>
+<ul>
+<li>Các máy ảo là những bản sao ảo chính xác các đặc tính phần cứng của máy tính thực sự và cho phép hệ điều hành hoạt động trên đó nhƣ trên phần cứng thực sự. Phần nhân hệ thống thực hiện giám sát máy ảo chịu trách nhiệm giao tiếp với phần cứng, chia sẻ tài nguyên hệ thống để tạo ra nhiều máy ảo, hoạt động độc lập với nhau, để cung cấp cho lớp bên trên.   </li>
+<li>Với cấu trúc này mỗi tiến trình hoạt động trên một máy ảo độc lập và nó có cảm giác như đang sở hữu một máy tính thực sự.    </li>
+<li>Mục đích của việc sử dụng máy ảo là xây dựng các hệ thống đa chƣơng với nhiều tiến trình thực hiện đồng thời, mỗi tiến trình được cung cấp một máy ảo với đầy đủ tài nguyên, tất nhiên là tài nguyên ảo, để nó thực hiện được.   </li>
+<li>Vấn đề phức tạp nhất của máy ảo là hệ thống đĩa. Giả sử hệ thống chỉ có ba bộ điều khiển đĩa nhưng có tới bảy máy ảo. Như vậy không thể gán cho mỗi máy ảo một bộ điều khiển đĩa và giải pháp là xây dựng hệ thống đĩa ảo.<br><img src="files\image_4.png" alt="image.png">    </li>
+<li>Nhận xét:   <ul>
+<li>Việc cài đặt các phần mềm giả lặp phần cứng để tạo ra máy ảo thường rất khó
+khăn và phức tạp.   </li>
+<li>Trong hệ thống này <strong><em>vấn đề bảo vệ tài nguyên hệ thống và tài nguyên đã cấp phát cho tiến trình, sẽ trở nên đơn giản hơn vì mỗi tiến trình thực hiện trên một máy tính (ảo) độc lập với nhau nên việc tranh chấp tài nguyên là không thể xảy ra.</em></strong>   </li>
+<li>Nhờ hệ thống máy ảo mà một ứng dụng được xây dựng trên hệ điều hành có thể hoạt động được trên hệ điều hành khác.   </li>
+</ul>
+</li>
+</ul>
+<h3 id="m-h-nh-client-server">Mô hình Client/Server</h3>
+<ul>
+<li>Các hệ điều hành hiện đại thường chuyển dần các nhiệm vụ của hệ điều hành ra các lớp bên ngoài nhằm thu nhỏ phần cốt lõi của hệ điều hành thành hạt nhân cực tiểu (kernel) sao cho chỉ phần hạt nhân này chỉ phụ thuộc vào phần cứng.   </li>
+<li>Từ đó mô hình này ra đời. Theo mô hình này hệ điều hành bao gồm:   <ul>
+<li>Nhiều tiến trình client, server   </li>
+<li>Phần hạt nhân của HDH chỉ thực hiện nhiệm vụ tạo các cơ chế thông tin liên lạc giữa các tiến trình client và server.   </li>
+</ul>
+</li>
+<li>2 loại tiến trình:   <ul>
+<li>Tiến trình bên ngoài hay tiến trình của chương trình người sử dụng được gọi là các tiến trình client.   </li>
+<li>Tiến trình của hệ điều hành đƣợc gọi là các tiến trình server.   </li>
+</ul>
+</li>
+<li>Khi cần thực hiện một chức năng hệ thống các tiến trình Client sẽ gởi yêu cầu tới tiến trình server tương ứng, tiến tình server sẽ xử lý và trả lời kết quả cho tiến trình client.   </li>
+<li>Nhận xét:   <ul>
+<li>Hệ  thống này dễ thay đổi và dễ mở rộng HDH, để thay đổi các chức năng của HDH chỉ cần thay đổi server tương ứng, để mở rộng HDH chỉ cần thêm các server mới vào hệ thống.   </li>
+<li><strong><em>Các tiến trình server của hệ điều hành hoạt động trong chế độ không đặc quyền</em></strong> nên không thể truy cập trực tiếp tới phần cứng, điều này giúp cho hệ thống được bảo vệ tốt hơn.<br><img src="files\image_u.png" alt="image.png">    </li>
+</ul>
+</li>
+</ul>
+<h2 id="c-c-t-nh-ch-t-c-b-n-c-a-hdh">Các tính chất cơ bản của HDH</h2>
+<h3 id="tin-c-y">Tin cậy</h3>
+<ul>
+<li>Mọi hoạt động, mọi thông báo của HĐH đều phải chuẩn xác, tuyệt đối. chỉ khi nào biết chắc chắn là đúng thì HĐH mới cung cấp thông tin cho người sử dụng.   </li>
+</ul>
+<h3 id="an-to-n">An toàn</h3>
+<ul>
+<li>Hệ thống phải tổ chức sao cho chương trình và dữ liệu không bị xoá hoặc bị thay đổi ngoài ý muốn trong mọi trường hợp và mọi chế độ hoạt động. Điều này đặc biệt quan trọng khi hệ thống là đa nhiệm. Các tài nguyên khác nhau đòi hỏi những yêu cầu khác nhau trong việc đảm bảo an toàn.   </li>
+</ul>
+<h3 id="hi-u-qu-">Hiệu quả</h3>
+<ul>
+<li>Các tài nguyên của hệ thống phải đƣợc khai thác triệt để sao cho ngay cả điều kiện tài nguyên hạn chế vẫn có thể giải quyết những yêu cầu phức tạp.    </li>
+<li>Một khía cạnh quan trọng của đảm bảo hiệu quả là duy trì đồng bộ trong toàn bộ hệ thống, không để các thiết bị tốc độ chậm trì hoãn hoạt động của toàn bộ hệ thống.   </li>
+</ul>
+<h3 id="t-ng-qu-t-theo-th-i-gian">Tổng quát theo thời gian</h3>
+<ul>
+<li>HĐH phải có tính kế thừa, đồng thời có khả năng thích nghi với những thay đổi có thể có trong tương lai.    </li>
+<li>Tính thừa kế là rất quan trọng ngay cả với các hệ điều hành thế hệ mới. Đối với việc nâng cấp, tính kế thừa là bắt buộc.   </li>
+</ul>
+<h3 id="thu-n-ti-n">Thuận tiện</h3>
+<ul>
+<li>Hệ thống phải dễ dàng sử dụng, có nhiều mức hiệu quả khác nhau tuỳ theo kiến thức và kinh nghiệm người dùng. Hệ thống trợ giúp phong phú để người sử dụng có thể tự đào tạo ngay trong quá trình khai thác.   </li>
+</ul>
+</body></html>
